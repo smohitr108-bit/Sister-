@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#120c2e">
+  <title>A Secret Gift for Shreya 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <main class="app">
+    <section class="lock-screen panel" id="lockScreen">
+      <div class="eyebrow">A LITTLE SOMETHING JUST FOR YOU</div>
+      <div class="gift-scene" aria-hidden="true">
+        <div class="gift-glow"></div>
+        <div class="gift-box"><div class="gift-lid"></div><div class="ribbon-v"></div><div class="ribbon-h"></div><div class="bow bow-left"></div><div class="bow bow-right"></div></div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span><span class="spark spark-c">✦</span>
+      </div>
+      <p class="tiny-label">A SECRET GIFT FOR</p>
+      <h1>Shreya <span class="gradient">Sister</span></h1>
+      <p class="subtitle">Some people make life a little brighter.<br>This little surprise is for one of them. 💜</p>
+      <form id="unlockForm" class="unlock-form">
+        <label for="password">Enter the secret password</label>
+        <div class="password-row">
+          <input id="password" type="password" placeholder="Your secret password" autocomplete="off" required>
+          <button class="unlock-btn" type="submit">Unlock <span>↗</span></button>
+        </div>
+        <p id="errorMsg" class="error" role="status"></p>
+      </form>
+      <div class="bottom-note">MADE WITH CARE · JUST FOR YOU</div>
+    </section>
+
+    <section class="gift-screen panel hidden" id="giftScreen">
+      <div class="topline"><span>✦ A MESSAGE FOR YOU</span><button id="musicBtn" class="music-btn" type="button" aria-pressed="false">♫ Music: Off</button></div>
+      <div class="mini-gift">🎁</div>
+      <p class="tiny-label">A SMALL REMINDER</p>
+      <h2>You are <span class="gradient">special, Shreya.</span></h2>
+      <p class="subtitle">A little page, with a lot of appreciation.</p>
+      <article class="letter">
+        <div class="letter-top"><span>💌</span><span>OPEN WHEN YOU NEED A SMILE</span></div>
+        <h3>Dear Shreya,</h3>
+        <p>Life gets busy, days get confusing, and sometimes we forget to tell the people around us how much they matter.</p>
+        <p>So here's a little reminder: you are appreciated for being you. I hope you keep smiling, keep learning, and keep finding reasons to be proud of yourself.</p>
+        <p>May your days bring you peace, happy surprises, and people who genuinely wish the best for you. No big occasion needed—just a small gift to make an ordinary day feel special.</p>
+        <p class="signoff">With lots of good wishes, <br><strong>Your brother 💜</strong></p>
+      </article>
+      <button id="surpriseBtn" class="main-btn" type="button">One more little surprise ✨</button>
+      <p id="surpriseText" class="surprise-text hidden">Shreya is the best sister 💜✨</p>
+      <button id="backBtn" class="text-btn" type="button">← Back to the gift box</button>
+      <div class="bottom-note">ENDLESS GOOD VIBES · FOR SHREYA</div>
+    </section>
+  </main>
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
